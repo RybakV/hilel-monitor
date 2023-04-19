@@ -1,0 +1,60 @@
+.user {
+    padding: 8px;
+    border: 2px solid #14fdce;
+    margin-bottom: 8px;
+    background-color: transparent;
+}
+.user button {
+    border: 2px solid #14fdce;
+    background-color: transparent;
+    padding: 4px 8px;
+}
+.user button:hover {
+    background-color: #14fdce;
+    color: #1a1e1c;
+}
+.album-title {
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+.album-title::first-letter {
+    text-transform: uppercase
+}
+.albums-list {
+    padding: 0 8px;
+    background-color: transparent;
+    list-style: none;
+    border-left: 2px solid #14fdce;
+}
+.albums-list li {
+    overflow: hidden;
+}
+.gallery .photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery.photos-shown .photos {
+    border: 2px solid #14fdce;
+    border-top: none;
+    padding: 4px;
+}
+.gallery.photos-shown .gallery-btn {
+    border-bottom: none;
+    position: relative;
+}
+.gallery.photos-shown .gallery-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: #14fdce;
+}
+.gallery .photo {
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    display: block;
+}

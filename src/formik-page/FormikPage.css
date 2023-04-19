@@ -1,0 +1,47 @@
+.formik-page label {
+  display: block;
+}
+.formik-page input {
+    border: 2px solid #1a1e1c;
+    background-color: transparent;
+    padding: 10px;
+    height: 48px;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'VT323', monospace;
+    color: #1a1e1c;
+}
+.formik-page button {
+    border: 2px solid #1a1e1c;
+    color: #1a1e1c;
+}
+.formik-page .formic-error {
+    color: #1a1e1c;
+    position: absolute;
+    top: 28px;
+    left: 100%;
+    margin-left: 9px;
+    background-color: #14fdce;
+    padding: 4px 8px;
+    border: 2px solid #1a1e1c;
+}
+.formik-page .formic-error::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 9px;
+    display: block;
+    background-color: #14fdce;
+    border-left: 2px solid #1a1e1c;
+    border-bottom: 2px solid #1a1e1c;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+}
+.formik-page .formik-form {
+    width: 500px;
+    max-width: 100%;
+}
+.formik-page fieldset {
+    position: relative;
+}

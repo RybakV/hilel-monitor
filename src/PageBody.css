@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+.page-body {
+    font-family: 'VT323', monospace;
+    position: absolute;
+    animation: crt-output 10ms infinite;
+    padding: 4vw 5vw;
+    pointer-events: auto;
+    text-shadow: 0 0.2em 1rem #0c7b46;
+    border-radius: 6.5rem;
+    overflow: hidden;
+    overflow-y: auto;
+    right: 332px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 364px);
+    height: calc(100% - 32px);
+    box-shadow: inset 2vw -2vw 15vw -2vw #529df755, inset 2vw 2vw 15vw -2vw #FF572255;
+}
+/* FORM STYLING */
+form {
+    color: #1a1e1c;
+    background-color: #14fdce;
+    padding: 24px 40px 40px;
+    display: inline-block;
+    max-width: 100%;
+}
+fieldset {
+    border: none;
+    margin-bottom: 16px;
+}
+input input[type="text"], input[type="email"], input[type="tel"]{
+    border: 2px solid #14fdce;
+    background-color: #1a1e1c;
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'VT323', monospace;
+    color: #14fdce;
+    max-width: 100%;
+    width: 500px
+}
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder {
+    color: #14fdce;
+}
+.page-body button {
+    border: 2px solid #14fdce;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'VT323', monospace;
+    color: #14fdce;
+    cursor: pointer;
+}
+.page-body::selection, .page-body *::selection  {
+    background-color: #14fdce;
+    color: #031e11;
+}
+@-webkit-keyframes crt-output {
+    0% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes crt-output {
+    0% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.page-body-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.page-body-logo {
+    width: 45px;
+    height: auto;
+    pointer-events: none;
+    margin: 8px;
+    display: inline-block;
+}
+.page-body-name {
+    display: inline-block;
+    line-height: 0.8em;
+}

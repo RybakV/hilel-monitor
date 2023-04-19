@@ -1,0 +1,81 @@
+.sidebar {
+    font-size: 16px;
+    width: 268px;
+    height: calc(100% - 96px);
+    position: absolute;
+    right: 32px;
+    color: #5a6673;
+    bottom: 64px;
+    background: #232825;
+    background: linear-gradient(172deg, rgb(20 22 21) 0%, rgb(26 30 28) 100%);
+    border-radius: 21px;
+    padding: 32px;
+    border-bottom: 4px solid #282c2a;
+    border-right: 5px solid #1b2126;
+    border-left: 5px solid #1c1914;
+    border-top: 8px solid #141414;
+}
+.sidebar::selection, .sidebar *::selection {
+    background-color: #7c889522;
+    color: #7c8895;
+}
+.sidebar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sidebar-btn {
+    background-color: #080808;
+    color: #6b778400;
+    text-align: center;
+    position: relative;
+    width: 45%;
+    margin-bottom: 10%;
+    height: 60px;
+    text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 2px 4px #0d0e0d, 2px 2px 2px 2px #292c2a, 2px -2px 2px 2px #222423, -2px 2px 2px 2px #2b3230;
+    border-radius: 5px;
+    z-index: 1;
+    font-size: 1em;
+    line-height: 1em;
+    transition: .2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-btn::after {
+    content: attr(data-title);
+    position: absolute;
+    z-index: -1;
+    background-color: #2a3c44;
+    color: #495f64;
+    text-shadow: 0 2px 1px #1a2b2c;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 5px solid #3e5156;
+    border-left: 8px solid #213234;
+    border-right: 8px solid #3c3836;
+    border-bottom: 10px solid #142122;
+    border-radius: 6px;
+    opacity: 1;
+    box-shadow: inset 10px -5px 14px #293e44, inset -10px -7px 22px #443f3d;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-btn:hover::after {
+    opacity: 1;
+    transform: scale(.97);
+    border-top: 5px solid #26363a;
+    border-right: 8px solid #2b2725;
+    border-bottom: 10px solid #101b1c;
+    background-color: #1d323b;
+    color: #35494e;
+    box-shadow: inset 10px 16px 14px #1c1f2066, inset -10px 13px 22px #3a373566;
+ }

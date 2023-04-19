@@ -1,0 +1,39 @@
+.smile-list {
+    display: flex;
+    margin-bottom: 16px;
+}
+.smile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.smile-emoji {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    border: 2px solid;
+    margin: 0 8px 8px 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+.smile-emoji:hover {
+    background-color: #14fdce;
+    color: #1a1e1c;
+}
+.smile-end-vote {
+    border: 2px solid;
+    margin: 0 8px 8px 0;
+    display: inline-block;
+    height: 64px;
+    padding: 22px 16px;
+    line-height: 16px;
+    cursor: pointer;
+}
+.smile-end-vote:hover {
+    background-color: #14fdce;
+    color: #1a1e1c;
+}
+
+

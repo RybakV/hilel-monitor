@@ -1,0 +1,28 @@
+.todo-item {
+    margin-bottom: 8px;
+}
+.todo-state {
+    cursor: pointer;
+}
+.todo-done, .todo-not-done {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.todo-done::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 12px;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: rotate(45deg);
+}
