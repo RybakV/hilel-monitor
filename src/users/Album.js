@@ -15,7 +15,7 @@ function Album(props) {
 
     function filterAlbums(data){
         const userAlbums = data.filter(function (el) {
-            return el.userId === id
+            return el.userId === Number(id)
         });
         return userAlbums
     }

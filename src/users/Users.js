@@ -1,6 +1,6 @@
 import './Users.css';
 import {useState} from "react";
-import Album from "./Album";
+import {Link} from "react-router-dom";
 
 function Users() {
 
@@ -19,11 +19,11 @@ function Users() {
             <h2>Illuminati Users:</h2>
             <div className="users-list">
                 {users.map((item, index) => (
-                    <div className="user" key={item.id}>
+                    <div className="user" key={item.id} id={'user'+item.id}>
                         <div className="user-name">
                             {item.username}
                         </div>
-                        <Album id={item.id}/>
+                        <Link to={"/users/"+item.id} data-title="Link">Link</Link>
                     </div>
                 ))}
             </div>
